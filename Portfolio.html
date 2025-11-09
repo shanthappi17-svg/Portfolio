@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shanthakumar N — Digital Marketing Portfolio</title>
+  <meta name="description" content="Portfolio of Shanthakumar N — Digital Marketing Professional | SEO | Google Ads | Email Marketing" />
+  <style>
+    :root{
+      --bg:#071127;
+      --card:#071922;
+      --accent:#06b6d4;
+      --muted:#9aa6b2;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1100px;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      background:linear-gradient(180deg,var(--bg) 0%, #06101a 100%);
+      color:#e6eef6;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:28px 16px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      min-height:100vh;
+    }
+    .wrap{width:100%;max-width:var(--maxw);}
+    .card{
+      background: linear-gradient(180deg,var(--card), #061426);
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow: 0 12px 40px rgba(2,6,23,0.6);
+      overflow:hidden;
+    }
+    .grid{display:grid;grid-template-columns:280px 1fr;gap:26px;align-items:start}
+    /* Sidebar */
+    .photo{
+      width:240px;height:300px;border-radius:10px;overflow:hidden;border:4px solid rgba(255,255,255,0.03);
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+      display:flex;align-items:center;justify-content:center;
+    }
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .name{font-weight:700;font-size:20px;letter-spacing:0.3px;margin:12px 0 6px}
+    .title{color:var(--accent);font-weight:600;font-size:13px;margin-bottom:10px}
+    .contact{color:var(--muted);font-size:13px;line-height:1.6}
+    .skills{display:flex;flex-wrap:wrap;margin-top:12px}
+    .skill{background:transparent;border:1px solid rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;font-size:13px;margin:6px 8px 0 0;color:var(--muted)}
+    /* Main */
+    h2{margin:0 0 8px;font-size:18px}
+    p{margin:0 0 10px;color:#d6e6f2}
+    .section{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));margin-bottom:14px}
+    table{width:100%;border-collapse:collapse;margin-top:8px}
+    th,td{padding:8px 10px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.03);font-size:14px}
+    th{color:var(--muted);font-weight:600}
+    td{color:#dbeffd}
+    .job{margin-bottom:12px}
+    .job strong{display:block}
+    .cta{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#0ea5a6);color:#022;font-weight:700;text-decoration:none}
+    .ghost{padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);color:var(--muted);text-decoration:none}
+    /* Responsive */
+    @media (max-width:980px){
+      .grid{grid-template-columns:1fr;gap:18px}
+      .photo{width:180px;height:220px;margin:0 auto}
+      .card{padding:20px}
+    }
+    @media (max-width:420px){
+      body{padding:16px 10px}
+      .photo{width:140px;height:170px}
+      .name{font-size:18px}
+    }
+    /* small helper */
+    a{color:var(--accent)}
+    ul{margin:8px 0 0 18px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="main">
+      <div class="grid">
+        <!-- Sidebar -->
+        <aside>
+          <div class="photo" aria-hidden="false">
+            <!-- Embedded Base64 image (your uploaded photo) -->
+            <img alt="Image" src="data:image/jpeg;base64,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" />
+          </div>
+
+          <div style="margin-top:12px;text-align:center">
+            <div class="name">SHANTHAKUMAR N</div>
+            <div class="title">Digital Marketing Professional | SEO | Google Ads | Email Marketing</div>
+            <div class="contact" style="margin-top:8px">
+              <div>📍 Bangalore, India</div>
+              <div>📞 9606804937</div>
+              <div>✉️ <a href="mailto:shanthappi17@gmail.com">shanthappi17@gmail.com</a></div>
+              <div style="margin-top:8px"><a href="https://www.linkedin.com/in/shanthakumar-n-184a901" target="_blank" rel="noopener">LinkedIn Profile</a></div>
+            </div>
+
+            <div class="skills" style="justify-content:center">
+              <div class="skill">SEO</div>
+              <div class="skill">Google Ads</div>
+              <div class="skill">Email Marketing</div>
+              <div class="skill">Operation Management</div>
+              <div class="skill">Analytics</div>
+              <div class="skill">Process Management</div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main content -->
+        <main>
+          <div class="section">
+            <h2>Professional Summary</h2>
+            <p>Accomplished and resourceful Digital Marketing Professional with over 5 years of experience in email marketing, SEO, Google Ads, and the U.S. healthcare sector. Skilled at planning, executing, and optimizing marketing strategies that increase visibility, traffic, and conversions.</p>
+          </div>
+
+          <div class="section">
+            <h2> SEO Project — Cherubs Montessori</h2>
+            <p><strong>Website:</strong> <a href="https://cherubsmontessori.com" target="_blank" rel="noopener">cherubsmontessori.com</a></p>
+            <p><strong>Goal:</strong> Improve local keyword rankings and overall visibility in Bangalore and branch-specific searches (HSR Layout, Sompura Gate).</p>
+
+            <table aria-label="SEO results">
+              <thead>
+                <tr><th>Keyword</th><th>Before</th><th>After</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Montessori schools in Bangalore</td><td>45</td><td>8</td></tr>
+                <tr><td>Best Montessori schools in Bangalore</td><td>15</td><td>7</td></tr>
+                <tr><td>Montessori preschool in Bangalore</td><td>51</td><td>2</td></tr>
+                <tr><td>Montessori schools in HSR Layout</td><td>15</td><td>2</td></tr>
+                <tr><td>Preschools in Sompura Gate</td><td>12</td><td>6</td></tr>
+                <tr><td>Nursery schools in Sompura Gate</td><td>9</td><td>5</td></tr>
+              </tbody>
+            </table>
+
+            <p style="margin-top:10px"><strong>Key Actions:</strong></p>
+            <ul>
+              <li>On-Page Optimization — optimized titles, meta descriptions, H1s, and internal linking between location pages.</li>
+              <li>Content Strategy — created branch-specific landing pages and long-tail coverage targeting local queries.</li>
+              <li>Technical SEO — fixed crawl issues, improved page speed, ensured mobile usability, and implemented LocalBusiness schema.</li>
+            </ul>
+
+            <p style="color:var(--muted)">Result: Multiple Top-10 rankings for generic and local keywords — improved visibility and increased local inquiries.</p>
+          </div>
+
+          <div class="section">
+            <h2>Professional Experience</h2>
+            <div class="job">
+              <strong>Digital Marketing Intern — Indra's Academy, Bengaluru</strong>
+              <div style="color:var(--muted);font-size:13px">Apr 2025 — Oct 2025</div>
+              <p>Created and optimized Google Ads & PPC campaigns, managed SEO efforts, wrote SEO-friendly blog posts, and managed content on WordPress.</p>
+            </div>
+
+            <div class="job">
+              <strong>Sr. Analyst – Process Management — Anteriad, Bengaluru</strong>
+              <div style="color:var(--muted);font-size:13px">Apr 2021 — Nov 2024</div>
+              <p>Managed end-to-end B2B email marketing campaigns using Salesforce and OB Platform, developed SOPs, trained new hires, and improved campaign accuracy and targeting.</p>
+            </div>
+
+            <div class="job">
+              <strong>Sr. Process Consultant — Hinduja Global Solutions</strong>
+              <div style="color:var(--muted);font-size:13px">Sep 2018 — Oct 2020</div>
+              <p>Processed and audited insurance claims, ensured compliance, generated reports, and led process improvement initiatives.</p>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Education & Certifications</h2>
+            <p><strong>BA — History, Economics, Political Science</strong><br/>Govt First Grade College, Vemagal — Bangalore University (2018)</p>
+            <p><strong>Certifications:</strong> Google Analytics; AI-Powered Performance Ads & Shopping Ads; Google Ads Apps; HubSpot Email Marketing.</p>
+          </div>
+
+          <div class="section">
+            <h2>About Me</h2>
+            <p>I combine data-driven insights with creative thinking to build marketing strategies that deliver measurable growth. I enjoy optimizing funnels, improving organic visibility, and creating campaigns that convert.</p>
+
+            <div class="cta">
+              <a class="btn" href="mailto:shanthappi17@gmail.com">Contact — Email</a>
+              <a class="ghost" href="https://www.linkedin.com/in/shanthakumar-n-184a901" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
